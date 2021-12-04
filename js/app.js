@@ -158,9 +158,59 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 let testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+// function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+//   let even = true;
+//   if (dynamicArray.length % 2 !== 0) even = false;
+//   let lastEl;
+//   if (even === false) {
+//     lastEl = dynamicArray[dynamicArray.length-1];
+//     dynamicArray.pop();
+//   }
+  
+//   const subProducts = dynamicArray.slice();
+//   console.log(subProducts);
+//   while (subProducts.length > 1) {
+//     for (let i = 0; i < subProducts.length; i++) {
+//       if (subProducts.length > 1) {
+//         let subProduct = multiply(subProducts[i], subProducts[i+1])
+//         subProduct = subProduct[0];
+//         subProducts.push(subProduct);
+//         subProducts.shift();
+//         subProducts.shift();
+//       }
+//       break;
+//     }
+//   }
+//   console.log(subProducts)
+//   let finalProduct;
+//   if (even === false) {
+//     finalProduct = multiply(subProducts[0], lastEl);
+//     finalProduct = finalProduct[0];
+//   }
+//   else finalProduct = subProducts[0]
+// }
+// input: array of any length
+// output: array: el1 prodcut of array els el2: str
+  // cb func takes 2 args and returns array, we want only array[0]
+  // first find out if even or odd # of els in array
+    // let even = true
+    // if (array.length % 2 !== 0) even = false;
+    // if even === false, lastEl = array[array.length-1], array.pop();
+    // numPairs = [];
+    // for loop to iterate thru array, make pairs
+      // if array[i+1] exists
+        // numPairs.push([array[i], array[i+1]])
+    // subProducts = numPairs
+    // subProducts = [2, 12, 4, 2]
+    // while (subProducts.length > 1)
+      // for loop to iterate thru subProducts
+      // let subProduct = mulitiply(subProducts[i], subProducts[i+1])
+      // subProduct = subProduct[0];
+      // subProducts.push(subProduct)
+      // subProducts.splice(0, 1)
+      // subProducts.splice(1, 1)
+    // return subProducts
 
-}
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
